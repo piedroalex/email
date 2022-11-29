@@ -2,6 +2,7 @@ package br.com.palm.email.models;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 import br.com.palm.email.enums.StatusEmail;
 import jakarta.persistence.Column;
@@ -18,7 +19,7 @@ public class EmailModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long emailId;
+    private UUID emailId;
     
     private String ownerRef;
     private String emailFrom;
