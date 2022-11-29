@@ -14,7 +14,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data @Entity @Table(name = "TB_EMAIL")
-public class Email implements Serializable {
+public class EmailModel implements Serializable {
 	
     private static final long serialVersionUID = 1L;
 
